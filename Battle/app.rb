@@ -1,6 +1,9 @@
-require 'sinatra'
-set :session_secret, 'super_secret'
+require 'sinatra/base'
 
-get '/' do
-  'Battle!'
+class App < Sinatra::Base
+
+  get '/' do
+    'Battle!'
+  end
+
 end
